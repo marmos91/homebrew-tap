@@ -5,13 +5,13 @@
 class Dfs < Formula
   desc "DittoFS server daemon — modular virtual filesystem with pluggable storage backends"
   homepage "https://github.com/marmos91/dittofs"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/marmos91/dittofs/releases/download/v0.6.0/dfs_0.6.0_Darwin_x86_64.tar.gz"
-      sha256 "b14632457e227ca9efd564a8a05005a53e0511f088c5f0f723b24e50a50719d2"
+      url "https://github.com/marmos91/dittofs/releases/download/v0.6.1/dfs_0.6.1_Darwin_x86_64.tar.gz"
+      sha256 "57354b9f94903ce5baad7d73afe76d642bf2b6f5fdd3327636ce5b6f760d05ab"
 
       def install
         bin.install "dfs"
@@ -19,8 +19,8 @@ class Dfs < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/marmos91/dittofs/releases/download/v0.6.0/dfs_0.6.0_Darwin_arm64.tar.gz"
-      sha256 "f70736b822a4f69e5fee23607ea87801933b3cc25fb35132397254fa3ce2aa6f"
+      url "https://github.com/marmos91/dittofs/releases/download/v0.6.1/dfs_0.6.1_Darwin_arm64.tar.gz"
+      sha256 "7bfbfc11f08f563b9d94ee8aa45eb40afb894fb2d69414fd446d6da8724f23b1"
 
       def install
         bin.install "dfs"
@@ -31,16 +31,16 @@ class Dfs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marmos91/dittofs/releases/download/v0.6.0/dfs_0.6.0_Linux_x86_64.tar.gz"
-      sha256 "3e3510b5fc03c30f155c2879632468c9fa3df2fc0ee6a961acbdd72567c4fae6"
+      url "https://github.com/marmos91/dittofs/releases/download/v0.6.1/dfs_0.6.1_Linux_x86_64.tar.gz"
+      sha256 "aacb82d7716f6a746152ffcae6579e57f6c0bd06c512d3a4997f2553ff32f9c6"
       def install
         bin.install "dfs"
         generate_completions_from_executable(bin/"dfs", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marmos91/dittofs/releases/download/v0.6.0/dfs_0.6.0_Linux_arm64.tar.gz"
-      sha256 "d7385d914b429998c91fd0fc13e0bb92ffcf1dbfd5ee66295ebf95a1c565e8e6"
+      url "https://github.com/marmos91/dittofs/releases/download/v0.6.1/dfs_0.6.1_Linux_arm64.tar.gz"
+      sha256 "b83d29b9c271fa5165aeadc73428004af27047665dd0452efa9abdcb7f5f2c24"
       def install
         bin.install "dfs"
         generate_completions_from_executable(bin/"dfs", "completion")
