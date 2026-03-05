@@ -5,13 +5,13 @@
 class Dfsctl < Formula
   desc "DittoFS CLI client — remote management for DittoFS servers"
   homepage "https://github.com/marmos91/dittofs"
-  version "0.8.1"
+  version "0.8.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/marmos91/dittofs/releases/download/v0.8.1/dfsctl_0.8.1_Darwin_x86_64.tar.gz"
-      sha256 "26482690653827b864842acf8d36b5db4eb0b3acf96e863de433839d28ac5764"
+      url "https://github.com/marmos91/dittofs/releases/download/v0.8.2/dfsctl_0.8.2_Darwin_x86_64.tar.gz"
+      sha256 "a51d07f2903c1137c52c3653b0cdab7c05680c075e8816ace50d3416c9e7f6b9"
 
       define_method(:install) do
         bin.install "dfsctl"
@@ -19,8 +19,8 @@ class Dfsctl < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/marmos91/dittofs/releases/download/v0.8.1/dfsctl_0.8.1_Darwin_arm64.tar.gz"
-      sha256 "53bcc04b1eab6e58ae83a4776c0e4c470844edb617e4a3d1b34ad9cb924fa976"
+      url "https://github.com/marmos91/dittofs/releases/download/v0.8.2/dfsctl_0.8.2_Darwin_arm64.tar.gz"
+      sha256 "24512c6bd5744e5a75d2b85bdeb36a101acde0dece82a7ca7daee8a6ea1c09ff"
 
       define_method(:install) do
         bin.install "dfsctl"
@@ -31,16 +31,16 @@ class Dfsctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marmos91/dittofs/releases/download/v0.8.1/dfsctl_0.8.1_Linux_x86_64.tar.gz"
-      sha256 "1b32803d7c66b59d41ae6d115a1b8d8ebf4d357448ea0c7dbafdf4014dfd5e04"
+      url "https://github.com/marmos91/dittofs/releases/download/v0.8.2/dfsctl_0.8.2_Linux_x86_64.tar.gz"
+      sha256 "ec4bdf59dc54f0ba1a7d4f042e79076e553d2bcb06204812479fbcc6e5cfb649"
       define_method(:install) do
         bin.install "dfsctl"
         generate_completions_from_executable(bin/"dfsctl", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marmos91/dittofs/releases/download/v0.8.1/dfsctl_0.8.1_Linux_arm64.tar.gz"
-      sha256 "f68bdf1473c09363730cb16e4727707ffef120bed7333e61aa206cf7ae28ae97"
+      url "https://github.com/marmos91/dittofs/releases/download/v0.8.2/dfsctl_0.8.2_Linux_arm64.tar.gz"
+      sha256 "ca38c583675d176713a86b89e9aaa12eef95127c5c82b435b3f3b47d65c94b15"
       define_method(:install) do
         bin.install "dfsctl"
         generate_completions_from_executable(bin/"dfsctl", "completion")
