@@ -5,13 +5,13 @@
 class Dfs < Formula
   desc "DittoFS server daemon — modular virtual filesystem with pluggable storage backends"
   homepage "https://github.com/marmos91/dittofs"
-  version "0.9.0"
+  version "0.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/marmos91/dittofs/releases/download/v0.9.0/dfs_0.9.0_Darwin_x86_64.tar.gz"
-      sha256 "cf984071bc5a434d83ae8a9a6dc729393b8bd275eaff97a8b7855598261225e3"
+      url "https://github.com/marmos91/dittofs/releases/download/v0.9.1/dfs_0.9.1_Darwin_x86_64.tar.gz"
+      sha256 "b11b08b51ec4740bd80eb1f6f73a74aa610adbbb6ca1f3d991e731af2678c890"
 
       define_method(:install) do
         bin.install "dfs"
@@ -19,8 +19,8 @@ class Dfs < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/marmos91/dittofs/releases/download/v0.9.0/dfs_0.9.0_Darwin_arm64.tar.gz"
-      sha256 "3c4389630dd5757cddb21f027f3a2f877083b08ac241d47662b1f7d6c517a562"
+      url "https://github.com/marmos91/dittofs/releases/download/v0.9.1/dfs_0.9.1_Darwin_arm64.tar.gz"
+      sha256 "cc329b275c8d976cef0887bae091d2f7d4cffb3d9fc513d640aefa3595e37b83"
 
       define_method(:install) do
         bin.install "dfs"
@@ -31,16 +31,16 @@ class Dfs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marmos91/dittofs/releases/download/v0.9.0/dfs_0.9.0_Linux_x86_64.tar.gz"
-      sha256 "14982da9ab4d1f799ea60db2e9a642e88a45b1b04ace215927e476b2ee5f7bef"
+      url "https://github.com/marmos91/dittofs/releases/download/v0.9.1/dfs_0.9.1_Linux_x86_64.tar.gz"
+      sha256 "1b5049f8f1d69a2ef0a6e8b489a492736f57e916ec31d2c6b43f56cf72d2ba24"
       define_method(:install) do
         bin.install "dfs"
         generate_completions_from_executable(bin/"dfs", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marmos91/dittofs/releases/download/v0.9.0/dfs_0.9.0_Linux_arm64.tar.gz"
-      sha256 "efe71aca0432277a0163618e60800782fed3b4f6333db5bc3908ccbc9eb37900"
+      url "https://github.com/marmos91/dittofs/releases/download/v0.9.1/dfs_0.9.1_Linux_arm64.tar.gz"
+      sha256 "c4297c7dadc5ecd34cd11c776be6c5ed3f93835d5cdd7033e6e9c862e8f01b0f"
       define_method(:install) do
         bin.install "dfs"
         generate_completions_from_executable(bin/"dfs", "completion")
