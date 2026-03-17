@@ -16,7 +16,7 @@ brew install marmos91/tap/<formula>
 Sync local files with Cubbit DS3 cloud storage. Native macOS app with Finder integration via File Provider. [Repository](https://github.com/marmos91/cubbit-ds3-drive)
 
 ```bash
-brew install --cask marmos91/tap/ds3-drive
+brew install --cask marmos91/tap/cubbit-ds3-drive
 ```
 
 ### DittoFS
