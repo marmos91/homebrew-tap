@@ -1,6 +1,6 @@
 cask "cubbit-ds3-drive" do
   version "1.6.0"
-  sha256 "670c2720985709506cb51d4fa8937081aec9eef8b50d708e1679d5559bf87b2b"
+  sha256 "175ea15bf3d794fae76f8c6d0f053a9ac2efe994f9c9397227de068e883326bc"
 
   url "https://github.com/marmos91/cubbit-ds3-drive/releases/download/v#{version}/Cubbit-DS3-Drive-#{version}.dmg"
   name "Cubbit DS3 Drive"
