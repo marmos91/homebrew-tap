@@ -32,3 +32,15 @@ A modular virtual filesystem with pluggable storage backends. [Repository](https
 brew install marmos91/tap/dfs
 brew install marmos91/tap/dfsctl
 ```
+
+### DittoFS Pro
+
+Premium web dashboard for DittoFS with visual management of stores, shares, adapters, and access control. [Repository](https://github.com/marmos91/dittofs-pro)
+
+| Formula | Description |
+|---------|-------------|
+| `dfs-pro` | DittoFS Pro server with embedded web dashboard |
+
+```bash
+brew install marmos91/tap/dfs-pro
+```
