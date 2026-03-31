@@ -32,7 +32,7 @@ cask "dfs-pro" do
     skip "Auto-generated on release."
   end
 
-  binary "dfs"
+  binary "dfs", target: "dfs-pro"
 
   postflight do
     system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "#{staged_path}/dfs"]
@@ -42,7 +42,7 @@ cask "dfs-pro" do
     DittoFS Pro is now installed.
 
     To start the server:
-      dfs
+      dfs-pro
 
     Default port: 8080
     Dashboard URL: http://localhost:8080
