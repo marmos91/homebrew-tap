@@ -26,7 +26,7 @@ cask "dfs-pro" do
 
   name "dfs-pro"
   desc "DittoFS Pro - Virtual filesystem management platform with web dashboard"
-  homepage "https://github.com/marmos91c/dittofs-pro"
+  homepage "https://github.com/marmos91/dittofs-pro"
 
   livecheck do
     skip "Auto-generated on release."
@@ -34,17 +34,9 @@ cask "dfs-pro" do
 
   binary "dfs"
 
-  service "run [opt_bin/"dfs"]
-keep_alive true
-log_path var/"log/dfs-pro.log"
-error_log_path var/"log/dfs-pro.log"
-"
-
   postflight do
     system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "#{staged_path}/dfs"]
   end
-
-  # No zap stanza required
 
   caveats <<~EOS
     DittoFS Pro is now installed.
