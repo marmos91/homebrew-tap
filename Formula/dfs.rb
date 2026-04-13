@@ -11,7 +11,7 @@ class Dfs < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/marmos91/dittofs/releases/download/v0.11.1/dfs_0.11.1_Darwin_x86_64.tar.gz"
-      sha256 "69f0b42b6bc4d72136e1ab86a0b53166c457d1a6805afdd054520554f0bd5e0c"
+      sha256 "5de4ff7a5a6862a1461d1908326b74072e8c95a8420929118108fa7398a072aa"
 
       define_method(:install) do
         bin.install "dfs"
@@ -20,7 +20,7 @@ class Dfs < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/marmos91/dittofs/releases/download/v0.11.1/dfs_0.11.1_Darwin_arm64.tar.gz"
-      sha256 "306d47e953571c86c47feba7c9596beaddfcde6b78cc9bdfeb290dc9d7991caf"
+      sha256 "3fd76dbd15d92f9c0f9c80b092eae6a34b821798bdae65a87f936d74e2321b3e"
 
       define_method(:install) do
         bin.install "dfs"
@@ -32,7 +32,7 @@ class Dfs < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/marmos91/dittofs/releases/download/v0.11.1/dfs_0.11.1_Linux_x86_64.tar.gz"
-      sha256 "3653244f8aee22d999e3593db522b9233419774f2c2acf2a477a81da9d481c8e"
+      sha256 "81d788a36c8e030bfff177a57bcec3908ff54fe35829a041a4933a7707e71888"
       define_method(:install) do
         bin.install "dfs"
         generate_completions_from_executable(bin/"dfs", "completion")
@@ -40,7 +40,7 @@ class Dfs < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/marmos91/dittofs/releases/download/v0.11.1/dfs_0.11.1_Linux_arm64.tar.gz"
-      sha256 "09a484792f871d831e90ae71f7b480d6a87de88404a0faca4c60b6dde90f7c22"
+      sha256 "84e6e6a8dd8d5aea174308e82f8f9357be01d1f6c6b1eb0b84ed14f5b7a3b8e4"
       define_method(:install) do
         bin.install "dfs"
         generate_completions_from_executable(bin/"dfs", "completion")
