@@ -11,7 +11,7 @@ class Dfsctl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/marmos91/dittofs/releases/download/v0.11.1/dfsctl_0.11.1_Darwin_x86_64.tar.gz"
-      sha256 "cd17f2ee3c20b5c41277f95e329cf9576aa3352fd1c7214d68df9206e684839a"
+      sha256 "2d155d9cf55f33eef7d20005cd01835d5e0543b5efe84dda97387ac8ff65edb3"
 
       define_method(:install) do
         bin.install "dfsctl"
@@ -20,7 +20,7 @@ class Dfsctl < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/marmos91/dittofs/releases/download/v0.11.1/dfsctl_0.11.1_Darwin_arm64.tar.gz"
-      sha256 "9b98974b9b0ee5462abdb6be3eab956ccb32fde3646b77a1be437eec2f2267f4"
+      sha256 "eb6329f7c91481372fb9a8a4abab04f40095a09a38b054cd148253ff06f8a038"
 
       define_method(:install) do
         bin.install "dfsctl"
@@ -32,7 +32,7 @@ class Dfsctl < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/marmos91/dittofs/releases/download/v0.11.1/dfsctl_0.11.1_Linux_x86_64.tar.gz"
-      sha256 "b19740c594dccc93e735c7ca36ca8ff0a3b585fa36f2bdf162b5bc63c6ef5395"
+      sha256 "38fd462e22b5a31896435f4240f962cdb7100e86187e664fca153b9c13e9ec51"
       define_method(:install) do
         bin.install "dfsctl"
         generate_completions_from_executable(bin/"dfsctl", "completion")
@@ -40,7 +40,7 @@ class Dfsctl < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/marmos91/dittofs/releases/download/v0.11.1/dfsctl_0.11.1_Linux_arm64.tar.gz"
-      sha256 "af018c0e08914dc72e1ddbeded7fe14fff7e07114082d1742a39925cf464c482"
+      sha256 "81077529b6161e215c8351634499f2d5e149840f33f77694f2da84b4124c7aae"
       define_method(:install) do
         bin.install "dfsctl"
         generate_completions_from_executable(bin/"dfsctl", "completion")
