@@ -4,22 +4,22 @@ cask "dfs-pro" do
 
   on_macos do
     on_intel do
-      sha256 "687fc7ecdd4157ba2b610bc7f74cc241b4bb6f6522793cbb8daf142d62a8fc30"
+      sha256 "2ca6338688feac9bf73e29ccc2e4612f481881dabc1f755b8b9f0f98db66dc09"
       url "https://s3.cubbit.eu/dittofs-pro-binaries/v#{version}/dfs-pro_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "fd5aba70000d9bcb52937dab9aa3fab9c9f6d1dfd0f553fdd0445641f44082c9"
+      sha256 "ff40328d0c2b951bf5983e97329114853aef8a42ee68b2329e4985add84794e2"
       url "https://s3.cubbit.eu/dittofs-pro-binaries/v#{version}/dfs-pro_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "005d175dd9292920807a0cc48fbb13793924f297f1aa66f6a768264aefc91751"
+      sha256 "405f57fcb05e3fd0ed41789fda82bcb254c151aecbed2d650338aec3e4d95369"
       url "https://s3.cubbit.eu/dittofs-pro-binaries/v#{version}/dfs-pro_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "9c01dae1aa9a175197fd92e7c2c88e9fa2500096d29585006ffe581b58a5549f"
+      sha256 "61b4ff2084f1548a7a9d4696d191e880f115ca9abab7c74669b3f892d6cfb414"
       url "https://s3.cubbit.eu/dittofs-pro-binaries/v#{version}/dfs-pro_#{version}_linux_arm64.tar.gz"
     end
   end
