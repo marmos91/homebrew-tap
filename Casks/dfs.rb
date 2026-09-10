@@ -4,22 +4,22 @@ cask "dfs" do
 
   on_macos do
     on_intel do
-      sha256 "a78a595fcec8192c8b0eea99d67bde403d047939cd219355d176ce732de7d8a8"
+      sha256 "14de5f95407c424c24670eb76ec47994d1d0ec024afd2f09498ba977267add7f"
       url "https://github.com/marmos91/dittofs/releases/download/v#{version}/dfs_#{version}_Darwin_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "2a5d954e7892aec3df19a19c1b6de864d12fd5a1bd971c0cbea51cb871974174"
+      sha256 "d7c213d79524e06ef85fd6858b6661b602ab0caa872b931280b8f14446b7655a"
       url "https://github.com/marmos91/dittofs/releases/download/v#{version}/dfs_#{version}_Darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "c2885b542f8fcbafe5f9f11fe7ec98ba4f6207d4cb40a5a78ec402e98add4426"
+      sha256 "b70cf561c92c5815262845b94e71e45757c1d3c2c422dd1c0f509bb1100e3d61"
       url "https://github.com/marmos91/dittofs/releases/download/v#{version}/dfs_#{version}_Linux_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "b4a6d16f7d9f68209d0363c563a13d88cafa146a42e703db799a3b6edb2f6ad8"
+      sha256 "ca0592eebac6786405e42e36fc89595bef14788609e27e3bd8c51df14a5b282d"
       url "https://github.com/marmos91/dittofs/releases/download/v#{version}/dfs_#{version}_Linux_arm64.tar.gz"
     end
   end
