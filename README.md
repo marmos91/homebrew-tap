@@ -9,7 +9,7 @@ brew tap marmos91/tap
 brew install marmos91/tap/<formula>
 ```
 
-## Available Formulae
+## Available Casks
 
 ### Cubbit DS3 Drive
 
@@ -25,9 +25,9 @@ Moved to [cubbit/homebrew-tap](https://github.com/cubbit/homebrew-tap): `brew in
 
 ### DittoFS Pro
 
-Premium web dashboard for DittoFS with visual management of stores, shares, adapters, and access control. [Repository](https://github.com/marmos91/dittofs-pro)
+Premium web dashboard for DittoFS with visual management of stores, shares, adapters, and access control. [Repository](https://github.com/cubbit/dittofs-pro)
 
-| Formula | Description |
+| Cask | Description |
 |---------|-------------|
 | `dfs-pro` | DittoFS Pro server with embedded web dashboard |
 

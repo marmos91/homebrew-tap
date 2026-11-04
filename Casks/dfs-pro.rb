@@ -26,7 +26,7 @@ cask "dfs-pro" do
 
   name "dfs-pro"
   desc "DittoFS Pro - Virtual filesystem management platform with web dashboard"
-  homepage "https://github.com/marmos91/dittofs-pro"
+  homepage "https://github.com/cubbit/dittofs-pro"
 
   livecheck do
     skip "Auto-generated on release."
