@@ -21,17 +21,7 @@ brew install --cask marmos91/tap/cubbit-ds3-drive
 
 ### DittoFS
 
-A modular virtual filesystem with pluggable storage backends. [Repository](https://github.com/marmos91/dittofs)
-
-| Formula | Description |
-|---------|-------------|
-| `dfs` | DittoFS server daemon |
-| `dfsctl` | DittoFS CLI client for remote server management |
-
-```bash
-brew install marmos91/tap/dfs
-brew install marmos91/tap/dfsctl
-```
+Moved to [cubbit/homebrew-tap](https://github.com/cubbit/homebrew-tap): `brew install --cask cubbit/tap/dfs` (also `dfsctl`). Existing installs migrate automatically.
 
 ### DittoFS Pro
 
