@@ -19,7 +19,18 @@ Sync local files with Cubbit DS3 cloud storage. Native macOS app with Finder int
 brew install --cask marmos91/tap/cubbit-ds3-drive
 ```
 
+### DittoFS
 
-### DittoFS, DittoFS Pro
+Moved to [cubbit/homebrew-tap](https://github.com/cubbit/homebrew-tap): `brew install --cask cubbit/tap/dfs` (also `dfsctl`). Existing installs migrate automatically.
 
-Moved to [cubbit/homebrew-tap](https://github.com/cubbit/homebrew-tap): `brew install --cask cubbit/tap/dfs` (also `dfsctl`, `dfs-pro`). Existing installs migrate automatically.
+### DittoFS Pro
+
+Premium web dashboard for DittoFS with visual management of stores, shares, adapters, and access control. [Repository](https://github.com/marmos91/dittofs-pro)
+
+| Formula | Description |
+|---------|-------------|
+| `dfs-pro` | DittoFS Pro server with embedded web dashboard |
+
+```bash
+brew install marmos91/tap/dfs-pro
+```
